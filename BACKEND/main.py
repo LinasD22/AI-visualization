@@ -38,12 +38,9 @@ def force_numeric_axis(fig):
 Data_previe_tab1, visualazation_tab2, Ai_chat_tab3 = st.tabs(
     ["📊 Data Preview", "🤖 AI Analysis", "💬 AI Chat"]
 )
-print("Current working directory:", os.getcwd())
-load_dotenv() 
+
+load_dotenv()
 API_KEY = os.getenv('API_KEY')
-print("API_KEY:", API_KEY)
-
-
 os.environ["GOOGLE_API_KEY"] = API_KEY
 
 # Configure the Generative AI module
