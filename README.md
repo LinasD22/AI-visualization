@@ -1,32 +1,73 @@
-# AI Visualizations with RAG
+# AI-Powered Data Visualization and Analysis
 
-**AI Visualizations with RAG** is an AI-powered web application built with Streamlit that leverages Retrieval Augmented Generation (RAG) techniques to automatically analyze CSV datasets, generate insightful visualizations, and provide AI-driven data insights. The application integrates Google Gemini for generative content and interactive AI chat functionality.
+This project provides an AI-enhanced data visualization and analysis tool using **Retrieval-Augmented Generation (RAG)**. It enables users to upload CSV files, explore data through AI-generated insights, and interact with an AI assistant powered by Google's Gemini API for deeper analysis.
 
-## Overview
-
-- **Automatic Data Processing:** Upload CSV files to view data previews, numerical summaries, and categorical insights.
-- **Dynamic Visualizations:** Generate histograms, bar charts, line charts, scatter plots, and more based on your data types.
-- **AI-Driven Analysis:** Use RAG techniques to select important features, explain correlations, and get concise AI-generated insights.
-- **Interactive Chat:** Engage with an AI agent to ask questions and receive detailed explanations about your dataset.
-
-## Prerequisites
-
-- **Python 3.x**
-- **Streamlit** – For building the web application.
-- Other required Python packages:
-  - `pandas`
-  - `numpy`
-  - `plotly`
-  - `google-generativeai`
-  - `python-dotenv`
-  - `sentence-transformers`
-  - `faiss`
-  - *(and any other dependencies required by the custom modules: `data_processing`, `visualization`, and `ai_utils`)*
+## Features
+- 📊 **Data Preview**: Upload and explore CSV datasets with automatic sampling options.
+- 📈 **AI-Driven Visualizations**: Automatic and manual visualizations of numerical, categorical, and datetime features.
+- 🤖 **AI-Enhanced Insights**: Feature selection and summary statistics generated using AI.
+- 💬 **AI Chatbot**: A built-in chatbot for discussing data and generating visualizations based on user queries.
 
 ## Installation
+To run this project locally, follow these steps:
 
-1. **Clone the Repository:**
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+```
 
-   ```bash
-   git clone https://github.com/yourusername/AI-visualization.git
-   cd AI-visualization/BACKEND
+### 2. Create a virtual environment (optional but recommended)
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
+
+### 3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Set up the API key for Google Gemini
+This project uses **Google Gemini API** for AI-powered insights. To obtain an API key:
+
+1. Go to the [Google AI Studio](https://aistudio.google.com/)
+2. Sign in with your Google account.
+3. Navigate to the API key section.
+4. Generate a new API key and copy it.
+5. Create a `.env` file in the project root and add:
+   ```
+   API_KEY=your-google-gemini-api-key
+   ```
+
+### 5. Run the application
+Start the Streamlit app by running:
+```bash
+streamlit run app.py
+```
+
+## Usage
+### Uploading Data
+- Click on **Upload your CSV file**.
+- Choose a dataset to analyze.
+- Select if you want to sample a fraction of the data for efficiency.
+
+### AI-Powered Insights
+- Explore **Summary Statistics** of numerical and categorical features.
+- Let AI suggest **important features** and explain their relevance.
+- Get **AI-generated visualizations** based on your dataset.
+
+### Chat with AI
+- Type queries in the **AI Chat** tab.
+- Ask for data summaries, pattern analysis, or feature importance.
+- Request specific visualizations (e.g., "Show a histogram for column X").
+
+## License
+This project is licensed under the MIT License. Feel free to use and modify it.
+
+## Contributing
+Pull requests and feature suggestions are welcome! Open an issue to discuss improvements.
+
+---
+_Enjoy exploring your data with AI-powered insights! 🚀_
+
