@@ -1,6 +1,6 @@
 # AI-Powered Data Visualization and Analysis
 
-This project provides an AI-enhanced data visualization and analysis tool using **Retrieval-Augmented Generation (RAG)**. It enables users to upload CSV files, explore data through AI-generated insights, and interact with an AI assistant powered by Google's Gemini API for deeper analysis.
+This project provides an AI-enhanced data visualization and analysis tool using **Retrieval-Augmented Generation (RAG)**. It enables users to upload CSV files, explore data through AI-generated insights, and interact with an AI assistant powered by Google's Gemini API for deeper analysis. Note: This project was developed in collaboration with my university colleague, Joris. For additional information, please visit his GitHub page (https://github.com/Joritsu).
 
 ## Features
 - 📊 **Data Preview**: Upload and explore CSV datasets with automatic sampling options.
